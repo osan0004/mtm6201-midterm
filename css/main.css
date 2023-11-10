@@ -1,0 +1,54 @@
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+  /* font-size: 50px; */
+}
+
+
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.secondry-container{
+  
+}
+
+body{
+  background-color: #c69c45;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+.welcome-button{
+  background-color: lightgray;
+  border: none;
+  border-radius: 30%;
+}
+
+.pastry-grid{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ justify-items: center;
+
+}
+
+.pastrys{
+  width: 50%;
+}
+
+.slogan-buttn{
+  display: flex;
+  justify-content: center;
+}
+
+.link-btn{
+  display: flex;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  border: black 2px solid;
+  padding: 1rem;
+  border-radius: 50px;
+  background-color: lightgrey;
+  text-align: center; 
+}
+
