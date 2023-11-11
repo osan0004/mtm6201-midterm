@@ -5,15 +5,15 @@
 
 
 .container{
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.secondry-container{
-  
+h1, h2, p{
+  color: #472F2A;
 }
 
-body{
+.welcome-body{
   background-color: #c69c45;
   font-family:Georgia, 'Times New Roman', Times, serif ;
 }
@@ -40,6 +40,13 @@ body{
   justify-content: center;
 }
 
+/* ------------------------------------HomepageBEGINS---------------------------------------------- */
+
+.home-container{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .link-btn{
   display: flex;
   font-size: 1.5rem;
@@ -52,3 +59,126 @@ body{
   text-align: center; 
 }
 
+.link-btn:hover{
+  transform: scale(1.25);
+  transition: transform .5s ease-out;
+}
+/* ------------------------------------------NAV--------------------------------------------- */
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin: 1rem;
+  justify-content: space-around;
+
+}
+
+nav li a,
+nav li a:link,
+nav li a:visited{
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  transition: transform .5s;
+}
+
+nav li :hover,
+nav li :focus{
+  transform: scale(1.25);
+  text-decoration: underline;
+}
+/* ----------------------------------------NAV END-------------------------------------------------- */
+
+.profile-p{
+  width: 70px;
+  border-radius: 50px;
+}
+
+.logo-pp{
+  display: flex;
+  justify-content: space-between; 
+}
+
+.search-line{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input.search-bar-width{
+  border-radius: 50px;
+  height: 30px;
+  width: 15rem;
+}
+
+.search-button{
+  height: 40px;
+  width: 4rem;
+  border-radius: 50px;
+}
+
+.search-bar-width::placeholder {
+  opacity: 50%;
+  padding: .4rem;
+
+}
+
+.search-bar-width{
+  width: 50%;
+}
+
+.banner-img{
+  width: 100%;
+  border-radius: 100px;
+}
+
+.banner{
+  background-image: url('/images/macsaroons.jpg');
+  min-height: 40vh;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 1rem;
+  /* color: white; */
+  font-size: 1.2rem;
+}
+
+.sale-text{
+  font-size: 2.5rem;
+}
+
+.menu-sec{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pastry-types{
+  display: flex;
+  justify-content: space-between;
+}
+
+.diet-needs{
+  border: 2px solid;
+  border-radius: 20px;
+  padding: .5rem;
+  background-color: #a6b25556;
+}
+
+.all-diet{
+  background-color: #A6B255; 
+}
+
+.pastry-grid{
+  padding-top: 2rem ;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.home-pastries{
+  width: 50%;
+  border-radius: 50px;
+}
