@@ -3,6 +3,9 @@
   /* font-size: 50px; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .container{
   max-width: 1200px;
@@ -26,7 +29,7 @@ h1, h2, p{
 
 .pastry-grid{
  display: grid;
- grid-template-columns: repeat(2, 1fr);
+ grid-template-columns: repeat(3, 1fr);
  justify-items: center;
 
 }
@@ -63,7 +66,6 @@ h1, h2, p{
   transform: scale(1.25);
   transition: transform .5s ease-out;
 }
-/* ------------------------------------------NAV--------------------------------------------- */
 
 nav ul{
   list-style-type: none;
@@ -90,7 +92,6 @@ nav li :focus{
   transform: scale(1.25);
   text-decoration: underline;
 }
-/* ----------------------------------------NAV END-------------------------------------------------- */
 
 .profile-p{
   width: 70px;
@@ -143,6 +144,7 @@ input.search-bar-width{
   padding: 2rem 1rem;
   /* color: white; */
   font-size: 1.2rem;
+  border-radius: 50px;
 }
 
 .sale-text{
@@ -161,10 +163,13 @@ input.search-bar-width{
 }
 
 .diet-needs{
+  display:flex ;
   border: 2px solid;
   border-radius: 20px;
   padding: .5rem;
   background-color: #a6b25556;
+  width: 10%;
+  justify-content: center;
 }
 
 .all-diet{
@@ -179,6 +184,76 @@ input.search-bar-width{
 }
 
 .home-pastries{
-  width: 50%;
+  width: 90%;
   border-radius: 50px;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+hr{
+  border-color: black;
+  border: 1px solid;
+  margin-top: 1rem ;
+}
+
+footer a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+footer a:hover{
+  transform: scale(1.25);
+  transition: transform .5s ease-out;
+}
+
+
+
+
+
+/* Media query for tablet screens */
+@media (max-width: 1024px){
+  .pastry-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+.pastry-types{
+  padding: 0 1rem  ;
+}
+
+}
+
+/* Media query for smaller screens ( mobile devices) */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin: 0 50px;
+  }
+
+ .search-button{
+  width: 70px;
+}
+
+input.search-bar-width{
+  width: 60%;
+}
+
+  main {
+    padding: 10px;
+  }
+
+  .pastry-grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 }
