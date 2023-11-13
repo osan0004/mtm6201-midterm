@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.container{
+.welcome-container{
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -27,11 +27,15 @@ h1, h2, p{
   border-radius: 30%;
 }
 
-.pastry-grid-1{
- display: grid;
- grid-template-columns: repeat(3, 1fr);
- justify-items: center;
+.pastry-welcome-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 1rem;
+}
 
+.pastrys{
+  border-radius: 30px;
 }
 
 .pastrys{
@@ -43,7 +47,15 @@ h1, h2, p{
   justify-content: center;
 }
 
-/* ------------------------------------HomepageBEGINS---------------------------------------------- */
+.link-btn{
+  height: 50%;
+  margin-top: 1rem;
+}
+
+/* ------------------------------------------Welcome page ENDS---------------------------------------- */
+
+
+/* ---------------------------------------Homepage BEGINS---------------------------------------------- */
 
 .home-container{
   max-width: 1400px;
@@ -75,7 +87,14 @@ nav ul{
   display: flex;
   margin: 1rem;
   justify-content: space-around;
+}
 
+a{
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 2em;
+  margin: -2em;
 }
 
 nav li a,
@@ -86,6 +105,8 @@ nav li a:visited{
   text-transform: uppercase;
   color: black;
   transition: transform .5s;
+  transition-delay: .3s;
+
 }
 
 nav li :hover,
@@ -232,12 +253,65 @@ footer a:hover{
 }
 
 .home-pastries:hover {
-  animation: shake 0.4s alternate ;
+  animation: shake 0.5s alternate ;
+  animation-delay: .5s;
+}
+/* ---------------------------------------Orderpage BEGINS---------------------------------------------- */
+
+.order-container{
+  max-width: 1400px;
+  margin: 0 auto; 
 }
 
+.order-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  /* background-color: red; */
+}
 
+.order-img{
+  width: 90%;
+  border-radius: 50px;
+  /* justify-content: center */
+}
 
-/* Media query for tablet screens */
+.name-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  width: 100%;
+
+}
+
+.image-text-button{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.submit-btn{
+  width: 50%;
+  background-color: #A6B255;
+  border-radius: 50px;
+  padding: .8rem;
+  margin-bottom: 1.5rem;
+}
+
+.submit-btn:hover{
+  transform: scale(1.10);
+  transition: transform .5s ;
+  cursor: pointer;
+}
+
+.submit-btn:focus{
+  background-color:#c69c45;
+}
+
+/* -----------------------------------Media query for tablet screens ----------------------------------*/
 @media (max-width: 1024px){
     .pastry-grid{
       grid-template-columns: repeat(2, 1fr);
@@ -248,7 +322,7 @@ footer a:hover{
     padding: 0 1rem  ;
   }
 
-  .pastry-grid-1{
+  .pastry-welcome-grid{
     grid-template-columns: repeat(2, 1fr);
     max-width: 400px;
     margin: 0 auto;
@@ -258,11 +332,14 @@ footer a:hover{
   .pastrys{
     border-radius: 30px;
     width: 100%;
+  }
 
+  .order-list{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Media query for smaller screens ( mobile devices) */
+/* -----------------------------------Media query for smaller screens ( mobile devices)------------------------------------------------ */
 @media (max-width: 768px) {
   header {
     padding: 10px;
@@ -288,4 +365,16 @@ input.search-bar-width{
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .order-list{
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .rotate-right{
+    rotate: 10deg;
+  }
+  
+  .rotate-left{
+    rotate: -10deg;
+  }
 }
