@@ -29,6 +29,19 @@ body {
   margin: 0 auto;
 }
 
+/* ---------------------------------------home page banner--------------------------------------- */
+.banner {
+  background-image: url('/images/macsaroons.jpg');
+  min-height: 40vh;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 1rem;
+  /* color: white; */
+  font-size: 1.2rem;
+  border-radius: 50px;
+}
+/* ---------------------------------------home page banner--------------------------------------- */
+
 h1,
 h2,
 p {
@@ -181,16 +194,6 @@ input.search-bar-width {
   border-radius: 100px;
 }
 
-.banner {
-  background-image: url('/images/macsaroons.jpg');
-  min-height: 40vh;
-  background-size: cover;
-  background-position: center;
-  padding: 2rem 1rem;
-  /* color: white; */
-  font-size: 1.2rem;
-  border-radius: 50px;
-}
 
 .sale-text {
   font-size: 2.5rem;
