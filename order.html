@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Order Page</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
   <div class="order-container">
     <header>
@@ -24,10 +26,11 @@
 
       <div class="search-line">
         <h2>Place Your Order</h2>
-  
+
         <div class="search-bar">
           <form class="search-flex">
-            <input class="search-bar-width" type="text" placeholder="Search for your favorite pastries here" name="search">
+            <input class="search-bar-width" type="text" placeholder="Search for your favorite pastries here"
+              name="search">
             <button class="search-button" type="submit">
               <span class="material-icons-outlined">
                 search
@@ -36,11 +39,20 @@
           </form>
         </div>
       </div>
+
+      <div class="pastry-types">
+        <li class="diet-needs"><a href="#all">All</a></li>
+        <li class="diet-needs"><a href="#pastries">Pastries</a></li>
+        <li class="diet-needs"><a href="#dairy-free">Dairy Free</a></li>
+        <li class="diet-needs"><a href="#vegan">Vegan</a></li>
+
+      </div>
     </header>
 
-    <main class="order-list">
+    <main class="order-list" id="all">
       <div class="image-text-button">
-        <img class="order-img" src="images/636ad425e4d5c_406f20eb50757e5d608b775a824709f2.jpg" alt="box of croissant">
+        <img class="order-img" id="pastries" src="images/636ad425e4d5c_406f20eb50757e5d608b775a824709f2.jpg"
+          alt="box of croissant">
         <div class="name-btn">
           <p>Box of Croissant</p>
           <button class="submit-btn" type="button">Order here</button>
@@ -48,7 +60,8 @@
       </div>
 
       <div class="image-text-button">
-        <img class="order-img" src="images/assorted-pastry-and-bakery-items-royalty-free-image-1690400053.jpg" alt="images of bread">
+        <img class="order-img" src="images/assorted-pastry-and-bakery-items-royalty-free-image-1690400053.jpg"
+          alt="images of bread">
         <div class="name-btn">
           <p>Scores of Bread</p>
           <button class="submit-btn" type="button">Order here</button>
@@ -72,15 +85,17 @@
       </div>
 
       <div class="image-text-button">
-        <img class="order-img" src="images/013123-coronation-chicken-pastries-lede.webp" alt="breakfast pastry">
+        <img class="order-img" id="dairy-free" src="images/013123-coronation-chicken-pastries-lede.webp"
+          alt="breakfast pastry">
         <div class="name-btn">
-          <p>Chicken Pies</p>
+          <p>Dairy Free Chicken Pies</p>
           <button class="submit-btn" type="button">Order here</button>
         </div>
       </div>
 
       <div class="image-text-button">
-        <img class="order-img" src="images/puff_pastry_fruit_tarts_ricotta_cream_filling13.-500x500.jpg" alt="image of croissant">
+        <img class="order-img" src="images/puff_pastry_fruit_tarts_ricotta_cream_filling13.-500x500.jpg"
+          alt="image of croissant">
         <div class="name-btn">
           <p>Puff Pastry Fruit Tarts</p>
           <button class="submit-btn" type="button">Order here</button>
@@ -88,7 +103,9 @@
       </div>
 
       <div class="image-text-button">
-        <img class="order-img" src="images/568598-strawberry-napoleons-photo-by-melissa-goff-cropped-b288707d76c2469a91da70317dcb4f67.jpg" alt="strawberry pastry">
+        <img class="order-img"
+          src="images/568598-strawberry-napoleons-photo-by-melissa-goff-cropped-b288707d76c2469a91da70317dcb4f67.jpg"
+          alt="strawberry pastry">
         <div class="name-btn">
           <p>Strawberry Pastry</p>
           <button class="submit-btn" type="button">Order here</button>
@@ -96,9 +113,9 @@
       </div>
 
       <div class="image-text-button">
-        <img class="order-img" src="images/fig-tartlets-1-4.jpg" alt="fig tarts">
+        <img class="order-img" id="vegan" src="images/fig-tartlets-1-4.jpg" alt="fig tarts">
         <div class="name-btn">
-          <p>Fig Tarts</p>
+          <p>Vegan Fig Tarts</p>
           <button class="submit-btn" type="button">Order here</button>
         </div>
       </div>
@@ -110,13 +127,13 @@
           <button class="submit-btn" type="button">Order here</button>
         </div>
       </div>
-
     </main>
     <hr>
     <footer>
-      <p>&copy Le Bleu Indigo Bakery</p>
+      <p>&copy; Le Bleu Indigo Bakery</p>
       <a class="b-t-t" href="#top" aria-label="Go back to the top">Back to Top</a>
     </footer>
   </div>
 </body>
+
 </html>
