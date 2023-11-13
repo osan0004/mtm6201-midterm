@@ -10,13 +10,13 @@
 
 <body>
   <div class="home-container">
-    <header>
+    <header role="banner">
       <div class="logo-pp">
-        <h1> Le Bleu Indigo Bakery</h1>
+        <h1 role="heading"> Le Bleu Indigo Bakery</h1>
         <img class="profile-p" src="images/profile-p2.jpg" alt="profile picture">
       </div>
 
-      <nav>
+      <nav role="navigation">
         <ul>
           <li> <a href="welcome.html">Welcome Page</a> </li>
           <li> <a href="index.html">Home</a> </li>
@@ -41,9 +41,9 @@
       </div>
     </header>
 
-    <main>
+    <main role="main">
       <div class="banner">
-        <p class="sale-text">20% OFF</p>
+        <h1> 20% OFF </h1>
         <p>Assorted Macaroons</p>
         <p>5th - 5th Aug</p>
       </div>
@@ -78,10 +78,19 @@
         <img class="home-pastries" src="images/fig-tartlets-1-4.jpg" alt="fig tarts">
         <img class="home-pastries" src="images/Gluten-Free-Apricot-Danish-Pastries-2-980x980.jpg" alt="apricots">
       </div>
+
+
+      <!-------------------Optimized Pictures for differnt screen sizes------------------------------------------>
+      <picture>
+        <source srcset="images/macsaroons-480_x_270.jpg 1x, images/macsaroons-960_x_540.jpg 2x, images/macsaroons-1600_x_900.jpg 3x" media="(max-width: 1600px)">
+
+
+
+      </picture>
     </main>
 
     <hr>
-    <footer>
+    <footer role="contentinfo">
       <p>&copy; Le Bleu Indigo Bakery</p>
       <a class="b-t-t" href="#top" aria-label="Go back to the top">Back to Top</a>
     </footer>

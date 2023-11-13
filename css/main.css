@@ -177,6 +177,12 @@ input.search-bar-width {
   height: 40px;
   width: 4rem;
   border-radius: 50px;
+  cursor: pointer;
+}
+
+.search-button:hover{
+  transform: scale(0.9);
+  transition: transform .5s;
 }
 
 .search-bar-width::placeholder {
@@ -192,11 +198,6 @@ input.search-bar-width {
 .banner-img {
   width: 100%;
   border-radius: 100px;
-}
-
-
-.sale-text {
-  font-size: 2.5rem;
 }
 
 .menu-sec {

@@ -8,15 +8,16 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
+<!----------------------------------- adds roles to different tags: header, h1 , main, nav & footer  ------------------------------------------------>
 <body>
   <div class="order-container">
-    <header>
+    <header role="banner">
       <div class="logo-pp">
-        <h1> Le Bleu Indigo Bakery</h1>
+        <h1 role="heading"> Le Bleu Indigo Bakery</h1>
         <img class="profile-p" src="images/profile-p2.jpg" alt="profile picture">
       </div>
 
-      <nav>
+      <nav role="navigation">
         <ul>
           <li> <a href="welcome.html">Welcome Page</a> </li>
           <li> <a href="index.html">Home</a> </li>
@@ -49,7 +50,7 @@
       </div>
     </header>
 
-    <main class="order-list" id="all">
+    <main role="main" class="order-list" id="all">
       <div class="image-text-button">
         <img class="order-img" id="pastries" src="images/636ad425e4d5c_406f20eb50757e5d608b775a824709f2.jpg"
           alt="box of croissant">
@@ -100,7 +101,7 @@
 
       <div class="image-text-button">
         <img class="order-img" src="images/puff_pastry_fruit_tarts_ricotta_cream_filling13.-500x500.jpg"
-          alt="image of croissant">
+          alt="puff pastry fruit tarts">
         <div class="name-btn">
           <p>Puff Pastry Fruit Tarts</p>
           <p>$4.99</p>
@@ -138,7 +139,7 @@
       </div>
     </main>
     <hr>
-    <footer>
+    <footer role="contentinfo">
       <p>&copy; Le Bleu Indigo Bakery</p>
       <a class="b-t-t" href="#top" aria-label="Go back to the top">Back to Top</a>
     </footer>
