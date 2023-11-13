@@ -27,7 +27,7 @@ h1, h2, p{
   border-radius: 30%;
 }
 
-.pastry-grid{
+.pastry-grid-1{
  display: grid;
  grid-template-columns: repeat(3, 1fr);
  justify-items: center;
@@ -46,8 +46,9 @@ h1, h2, p{
 /* ------------------------------------HomepageBEGINS---------------------------------------------- */
 
 .home-container{
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
+  /* background-color: red; */
 }
 
 .link-btn{
@@ -90,12 +91,16 @@ nav li a:visited{
 nav li :hover,
 nav li :focus{
   transform: scale(1.25);
-  text-decoration: underline;
 }
 
 .profile-p{
   width: 70px;
   border-radius: 50px;
+}
+
+.profile-p:hover{
+  transform: scale(1.25);
+  transition: transform .5s ;
 }
 
 .logo-pp{
@@ -181,6 +186,7 @@ input.search-bar-width{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  justify-items: center;
 }
 
 .home-pastries{
@@ -198,15 +204,17 @@ hr{
   margin-top: 1rem ;
 }
 
-footer a{
+footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+footer a{
   color: black;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-
 }
 
 footer a:hover{
@@ -214,20 +222,44 @@ footer a:hover{
   transition: transform .5s ease-out;
 }
 
+@keyframes shake {
+  0% {
+      transform: rotate(5deg);
+  }
+  100% {
+      transform: rotate(-5deg);
+  }
+}
 
+.home-pastries:hover {
+  animation: shake 0.4s alternate ;
+}
 
 
 
 /* Media query for tablet screens */
 @media (max-width: 1024px){
-  .pastry-grid{
-    grid-template-columns: repeat(2, 1fr);
+    .pastry-grid{
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+
+  .pastry-types{
+    padding: 0 1rem  ;
   }
 
-.pastry-types{
-  padding: 0 1rem  ;
-}
+  .pastry-grid-1{
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 1rem;
+  }
 
+  .pastrys{
+    border-radius: 30px;
+    width: 100%;
+
+  }
 }
 
 /* Media query for smaller screens ( mobile devices) */
@@ -241,7 +273,7 @@ footer a:hover{
   }
 
  .search-button{
-  width: 70px;
+  width: 80px;
 }
 
 input.search-bar-width{
