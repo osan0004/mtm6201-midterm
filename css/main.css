@@ -87,6 +87,7 @@ p {
 .link-btn {
   height: 50%;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* ------------------------------------------Welcome page ENDS---------------------------------------- */
@@ -154,11 +155,6 @@ nav li :focus {
 .profile-p {
   width: 70px;
   border-radius: 50px;
-}
-
-.profile-p:hover {
-  transform: scale(1.25);
-  transition: transform .5s ease-in-out;
 }
 
 .logo-pp {
