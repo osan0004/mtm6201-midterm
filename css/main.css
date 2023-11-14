@@ -153,7 +153,7 @@ nav li :focus {
 
 .profile-p:hover {
   transform: scale(1.25);
-  transition: transform .5s;
+  transition: transform .5s ease-in-out;
 }
 
 .logo-pp {
@@ -182,7 +182,7 @@ input.search-bar-width {
 
 .search-button:hover{
   transform: scale(0.9);
-  transition: transform .5s;
+  transition: transform .5s; 
 }
 
 .search-bar-width::placeholder {
@@ -302,7 +302,7 @@ footer a:hover {
 }
 
 .home-pastries:hover {
-  animation: shake 0.5s alternate;
+  animation: shake 0.5s alternate ease-in-out;
   animation-delay: .5s;
 }
 
