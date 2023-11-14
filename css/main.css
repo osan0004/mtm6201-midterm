@@ -53,6 +53,11 @@ p {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.h1-link{
+  text-decoration: none;
+  
+}
+
 .welcome-button {
   background-color: lightgray;
   border: none;
