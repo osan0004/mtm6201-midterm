@@ -31,7 +31,7 @@ body {
 
 /* ---------------------------------------home page banner--------------------------------------- */
 .banner {
-  background-image: url('/images/macsaroons.jpg');
+  background-image: url('../images/macsaroons.jpg');
   min-height: 40vh;
   background-size: cover;
   background-position: center;
